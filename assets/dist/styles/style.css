@@ -1,68 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+footer {
+  padding: 30px 30px;
+  background-color: #161616;
+  font-size: 16px;
+}
+
+footer .container {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .icons i {
+  font-size: 18px;
+  padding: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.taxi-background {
+header .taxi-background {
   position: relative;
 }
 
-.taxi-background > img {
+header .taxi-background > img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 70vh;
 }
 
-.taxi-background > .botones-iniciales {
+header .taxi-background > .botones-iniciales {
   position: absolute;
   top: 10%;
   left: 5%;
 }
 
-.taxi-background > .botones-iniciales > input {
-  padding: 10px 20px;
+header .taxi-background > .botones-iniciales > input {
+  font-family: "Montserrat", sans-serif;
+  padding: 7px 12px;
   border-radius: 50px;
-  width: 200px;
-  height: 45px;
-  color: black;
+  width: 150px;
+  height: 35px;
+  color: #161616;
   background-color: white;
   font-weight: normal;
-  font-size: large;
+  font-size: 16px;
+  border-style: none;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.taxi-background > .botones-iniciales :first-child {
+header .taxi-background > .botones-iniciales :first-child {
   color: white;
-  background-color: black;
+  background-color: #161616;
 }
 
-i {
-  font-size: 35px;
+header .taxi-background > .logo {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
 }
 
 .pasos-registro {
-  background-color: #bdbaba;
+  background-color: #cccccc;
+  padding: 50px 100px;
+  text-align: center;
 }
 
 .pasos-registro ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 0;
 }
 
 .pasos-registro ul li {
-  margin: 50px;
+  font-weight: 500;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,40 +115,57 @@ i {
   color: #616866;
 }
 
-.pasos-registro > ul > li > i {
-  padding: 10px 0px;
+.pasos-registro ul i:first-child {
+  font-size: 2.8em;
+  padding-bottom: 0.4em;
+}
+
+.pasos-registro ul i:last-child {
+  font-size: 2em;
+  padding-top: 0.4em;
 }
 
 .pasos-registro > ul > li > i:first-child {
   font-size: 55px;
 }
 
-.nosotros, .recomendaciones {
+.nosotros {
+  padding: 50px 200px;
   text-align: center;
-  padding: 30px 0px;
+  color: #161616;
+}
+
+.nosotros p {
+  padding-top: 20px;
 }
 
 .recomendaciones {
+  padding: 50px 100px;
+  text-align: center;
   background-color: #3b7070;
+  color: white;
 }
 
 .recomendaciones .container > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 0;
+  padding-top: 30px;
 }
 
 .recomendaciones .container > ul li {
   padding: 10px 20px;
-  margin: 20px;
+  width: 170px;
+  height: 150px;
   background-color: white;
+  color: #161616;
   border-radius: 5px;
   -webkit-box-shadow: 1px 3px 3px #4d4a4a79;
           box-shadow: 1px 3px 3px #4d4a4a79;
@@ -119,7 +173,7 @@ i {
 }
 
 .seccion-registro {
-  height: 100px;
+  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,56 +186,31 @@ i {
 }
 
 .seccion-registro > input {
-  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 7px 12px;
   border-radius: 50px;
-  width: 200px;
-  height: 45px;
-  color: black;
+  width: 150px;
+  height: 35px;
+  color: #161616;
   background-color: white;
   font-weight: normal;
-  font-size: large;
+  font-size: 16px;
+  border-style: none;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  height: 50px;
+  width: 180px;
   color: white;
-  background-color: black;
+  background-color: #161616;
 }
 
-footer {
-  background-color: black;
+@media screen and (max-width: 500px) {
+  padding: 50px 80px;
+  text-align: center;
 }
 
-footer .container {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-}
-
-footer .container .icons {
-  font-size: 25px;
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+@media screen and (max-width: 768px) {
+  padding: 50px 100px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
