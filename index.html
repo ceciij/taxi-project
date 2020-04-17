@@ -5,56 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bedu travels</title>
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="assets/styles/header.css">
-  <link rel="stylesheet" href="assets/styles/footer.css">
+  <link rel="stylesheet" href="assets/dist/styles/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
 <body>
 <header>
-<div class="taxi-background">
-  <img src="/assets/images/taxi-background.jpeg" alt="" class="background-image">
-  <div class="botones-iniciales">
-    <input type="button" value="Registrarme">
-    <input type="button" value="Ingresar">
+  <div class="taxi-background">
+    <img src="/assets/images/taxi-background.jpeg" alt="" >
+    <div class="botones-iniciales">
+      <input type="button" value="Registrarme">
+      <input type="button" value="Ingresar">
+    </div>
   </div>
-</div>
 </header>
 <div class="logo">
 </div>
 
-<section>
-  <div class="pasos-registro">
+<section class="pasos-registro">
+  <div class="container">
     <ul>
       <li>
-        <i class="far fa-circle"></i>Regístrate <i class="far fa-edit"></i>
+        <i class="far fa-circle"></i>
+        Regístrate
+        <i class="far fa-edit"></i>
       </li>
       <li>
-        <i class="far fa-circle"></i>Reserva <i class="fas fa-map-marker-alt"></i>
+        <i class="far fa-circle"></i>
+        Reserva
+        <i class="fas fa-map-marker-alt"></i>
       </li>
       <li>
-        <i class="far fa-circle"></i>Paga <i class="fas fa-dollar-sign"></i>
+        <i class="far fa-circle"></i>
+        Paga
+        <i class="fas fa-dollar-sign"></i>
       </li>
     </ul>
   </div>
 </section>
-<div class="nosotros">
-  <h1>¿Por qué nosotros?</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam, odit nihil corrupti vitae aliquam voluptatem ut placeat omnis dolores corporis alias, dolorum reprehenderit at quae consectetur debitis, unde est.</p>
-</div>
-<div class="recomendaciones">
-  <h1>¿Qué dicen nuestros usuarios?</h1>
-  <ul>
-    <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi, 
-    </li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi, Temporibus?</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi Temporibus?</li>
-  </ul>
-</div>
 
-<section>
+<section class="container">
+  <div class="nosotros">
+    <h1>¿Por qué nosotros?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam, odit nihil corrupti vitae aliquam voluptatem ut placeat omnis dolores corporis alias, dolorum reprehenderit at quae consectetur debitis, unde est.</p>
+  </div>
+</section>
+
+<section class="recomendaciones">
+  <div class="container">
+    <h1>¿Qué dicen nuestros usuarios?</h1>
+    <ul>
+      <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi, 
+      </li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi, Temporibus?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque eveniet excepturi quasi Temporibus?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container">
   <div class="seccion-registro">
     <input type="button" value="Registrarme">
   </div>
@@ -62,11 +72,13 @@
 </section>
 
 <footer>
-  <div>All rights reserved</div>
-  <div>Telefono: 333-333-33</div>
-  <div class="icons">
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
+  <div class="container">
+    <div>All rights reserved</div>
+    <div>Telefono: 333-333-33</div>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
   </div>
 </footer>
 </body>

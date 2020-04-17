@@ -1,0 +1,17 @@
+@mixin botones {
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    font-weight: normal;
+    font-size: large;
+  }
+  
+  @mixin flex($jc:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+    
+  }
