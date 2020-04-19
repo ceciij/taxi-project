@@ -64,6 +64,7 @@ header .taxi-background > .botones-iniciales > input {
   border-style: none;
   -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 header .taxi-background > .botones-iniciales :first-child {
@@ -73,7 +74,7 @@ header .taxi-background > .botones-iniciales :first-child {
 
 header .taxi-background > .logo {
   position: absolute;
-  bottom: -10%;
+  bottom: -8%;
   left: 50%;
 }
 
@@ -198,19 +199,17 @@ header .taxi-background > .logo {
   border-style: none;
   -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
   height: 50px;
   width: 180px;
   color: white;
   background-color: #161616;
 }
 
-@media screen and (max-width: 500px) {
-  padding: 50px 80px;
-  text-align: center;
-}
-
 @media screen and (max-width: 768px) {
-  padding: 50px 100px;
-  text-align: center;
+  .nosotros {
+    padding: 50px 80px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,6 +18,7 @@ body{
 
 header .taxi-background {
   position: relative;
+
   & > img{
     object-fit: cover;
     width:100%;
@@ -37,7 +38,7 @@ header .taxi-background {
   }
   & > .logo{
     position: absolute;
-    bottom: -10%;
+    bottom: -8%;
     left: 50%; //Como lo pongo sin hardcodear??
   } 
 }
@@ -117,19 +118,27 @@ header .taxi-background {
 }
 
 
-@media screen and(max-width: 500px) {
-  @include padding(50px, 80px);
+@media screen and (max-width: $breakpoint-xs) {
+  
 }
 
-@media screen and(max-width: 768px) {
-  @include padding(50px, 100px);
+@media screen and (max-width: $breakpoint-s) {
+  
 }
-// @media (max-width: 992px) {
 
-// }
-// @media (max-width: 1200px) {
+@media  screen and (max-width: $breakpoint-m) {
+  //768
+  .nosotros{
+    @include padding(50px, 80px);
+  }
+}
 
-// }
+@media screen and (max-width: $breakpoint-l) {
+  
+}
 
+@media screen and (max-width: $breakpoint-xl) {
+  
+}
 
   
