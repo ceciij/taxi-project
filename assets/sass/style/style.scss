@@ -38,8 +38,9 @@ header .taxi-background {
   }
   & > .logo{
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -8%;
-    left: 50%; //Como lo pongo sin hardcodear??
   } 
 }
   
@@ -49,8 +50,9 @@ header .taxi-background {
   & ul{
     @include flex(space-evenly);
     flex-wrap: nowrap;
-    padding: 0;
+    padding-top: 30px;
     & li{
+      min-width: 120px;
       font-weight: 500;
       font-size: 20px; 
       display: flex;
@@ -92,15 +94,19 @@ header .taxi-background {
     padding-top: 30px;
     li{
       padding: 10px 20px;
-      width: 170px;
+      min-width: 150px;
+      max-width: 170px;
       height: 150px;
-      //line-height: 150px;
+      margin-right: 20px;
       background-color: white;
       color: $color-dark;
       border-radius:5px;
       box-shadow: 1px 3px 3px #4d4a4a79;
       font-size: 14px;
     }
+  }
+  .container > i{
+    display: none;
   }
 }
 
@@ -111,7 +117,6 @@ header .taxi-background {
   & > input{
     @include botones;
     height: 50px;
-    width: 180px;
     color: white;
     background-color:$color-dark;
   }
@@ -123,13 +128,45 @@ header .taxi-background {
 }
 
 @media screen and (max-width: $breakpoint-s) {
-  
+
+  .recomendaciones > .container {
+    & > i{
+      display: inline-block;
+      width: 80px;
+      margin-top: 30px;
+      font-size: 50px;
+    }
+    & > ul{
+      & > li{
+        margin-right: 20px;
+      }
+      & > li:nth-of-type(2){
+        display: none;
+      }
+    }
+  }
 }
 
 @media  screen and (max-width: $breakpoint-m) {
   //768
   .nosotros{
     @include padding(50px, 80px);
+  }
+  .recomendaciones > .container {
+    & > i{
+      display: inline-block;
+      width: 80px;
+      margin-top: 30px;
+      font-size: 50px;
+    }
+    & > ul{
+      & > li{
+        margin-right: 20px;
+      }
+      & > li:last-of-type{
+        display: none;
+      }
+    }
   }
 }
 

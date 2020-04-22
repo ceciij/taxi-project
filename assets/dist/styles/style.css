@@ -53,14 +53,12 @@ header .taxi-background > .botones-iniciales {
 
 header .taxi-background > .botones-iniciales > input {
   font-family: "Montserrat", sans-serif;
-  padding: 7px 12px;
+  padding: 10px 35px;
   border-radius: 50px;
-  width: 150px;
-  height: 35px;
   color: #161616;
   background-color: white;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   border-style: none;
   -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
@@ -74,8 +72,10 @@ header .taxi-background > .botones-iniciales :first-child {
 
 header .taxi-background > .logo {
   position: absolute;
-  bottom: -8%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -8%;
 }
 
 .pasos-registro {
@@ -96,10 +96,11 @@ header .taxi-background > .logo {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0;
+  padding-top: 30px;
 }
 
 .pasos-registro ul li {
+  min-width: 120px;
   font-weight: 500;
   font-size: 20px;
   display: -webkit-box;
@@ -163,14 +164,20 @@ header .taxi-background > .logo {
 
 .recomendaciones .container > ul li {
   padding: 10px 20px;
-  width: 170px;
+  min-width: 150px;
+  max-width: 170px;
   height: 150px;
+  margin-right: 20px;
   background-color: white;
   color: #161616;
   border-radius: 5px;
   -webkit-box-shadow: 1px 3px 3px #4d4a4a79;
           box-shadow: 1px 3px 3px #4d4a4a79;
   font-size: 14px;
+}
+
+.recomendaciones .container > i {
+  display: none;
 }
 
 .seccion-registro {
@@ -188,28 +195,52 @@ header .taxi-background > .logo {
 
 .seccion-registro > input {
   font-family: "Montserrat", sans-serif;
-  padding: 7px 12px;
+  padding: 10px 35px;
   border-radius: 50px;
-  width: 150px;
-  height: 35px;
   color: #161616;
   background-color: white;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   border-style: none;
   -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   height: 50px;
-  width: 180px;
   color: white;
   background-color: #161616;
+}
+
+@media screen and (max-width: 576px) {
+  .recomendaciones > .container > i {
+    display: inline-block;
+    width: 80px;
+    margin-top: 30px;
+    font-size: 50px;
+  }
+  .recomendaciones > .container > ul > li {
+    margin-right: 20px;
+  }
+  .recomendaciones > .container > ul > li:nth-of-type(2) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .nosotros {
     padding: 50px 80px;
     text-align: center;
+  }
+  .recomendaciones > .container > i {
+    display: inline-block;
+    width: 80px;
+    margin-top: 30px;
+    font-size: 50px;
+  }
+  .recomendaciones > .container > ul > li {
+    margin-right: 20px;
+  }
+  .recomendaciones > .container > ul > li:last-of-type {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
