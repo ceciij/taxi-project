@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,OAAO,CAAC,6LAAI;ADCZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,ECGJ,YAAY,EAAE,UAAU;CDFlC;;AAEH,AAAA,OAAO,CAAA;EACH,gBAAgB,ECPR,OAAO;EDQf,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CACtB;;AAGD,AAAA,QAAQ,CAAA;EACJ,UAAU,EAAE,QAAQ;EACpB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../../sass/style/reservaciones.scss",
+        "../../sass/variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "reservaciones.css"
+}

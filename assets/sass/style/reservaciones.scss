@@ -1,0 +1,25 @@
+@import "../variables/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+      font-family: $montserrat;
+  }
+
+.header{
+    background-color: $dark-gray;
+    height: 130px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-ul{
+    align-self: flex-end;
+    display: flex;
+}
