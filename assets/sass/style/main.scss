@@ -57,7 +57,7 @@ header .taxi-background {
       flex-direction: column;
       align-items: center;
       list-style: none;
-      color: rgb(97, 104, 102);
+      color: #5b5b5b;
     }
     & i:first-child{
       font-size: 2.8em;
@@ -84,8 +84,8 @@ header .taxi-background {
   
 .recomendaciones{
   @include padding;
-  background-color: rgb(59, 112, 112);
-  color: white;
+  background-color: #cccccc;;
+  color: black;
   .container > ul{
     @include flex(space-evenly);
     list-style: none;
