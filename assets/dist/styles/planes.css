@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-bar {
+  background-color: #5b5b5b;
+  height: auto;
+  color: white;
+  padding: 10px 50px 0px 50px;
+}
+
+.nav-bar .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .header .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .header .sign-in p {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.nav-bar .header .sign-in i {
+  font-size: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.nav-bar .header .burger {
+  display: none;
+}
+
+.menu {
+  padding: 0px 100px;
+}
+
+.menu .menu-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu-ul > li {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 0px;
+  min-width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar .header .burger {
+    display: initial;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .menu .menu-ul {
+    display: block;
+  }
+  .menu .menu-ul > li {
+    list-style: none;
+    cursor: pointer;
+  }
+}
+
+footer {
+  padding: 30px 30px;
+  background-color: #000000;
+  font-size: 16px;
+}
+
+footer .container {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .icons i {
+  font-size: 18px;
+  padding: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-afiliacion {
+  background-color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-afiliacion .img-planes {
+  max-width: 50%;
+  min-width: 480px;
+}
+
+.container-afiliacion .img-planes img {
+  width: 100%;
+}
+
+.container-afiliacion .descripcion-planes {
+  display: inline-block;
+  width: 50%;
+  padding: 30px;
+}
+
+.container-afiliacion .descripcion-planes h2 {
+  margin-bottom: 20px;
+}
+
+.container-afiliacion .descripcion-planes input {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 35px;
+  border-radius: 50px;
+  color: #000000;
+  background-color: white;
+  font-weight: normal;
+  font-size: 20px;
+  border-style: none;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: black;
+  color: white;
+}
+
+.container-planes {
+  text-align: center;
+}
+
+.container-planes h1 {
+  margin-top: 30px;
+}
+
+.container-planes .planes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-planes .planes .item {
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.container-planes .planes .item .titulo-plan {
+  padding: 0px 20px;
+}
+
+.container-planes .planes .item .titulo-plan h1 {
+  display: inline-block;
+  color: white;
+}
+
+.container-planes .planes .item .titulo-plan .numero {
+  background-color: #f9cf29;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+}
+
+.container-planes .planes .item .descripcion-individual {
+  padding: 20px;
+  text-align: center;
+}
+
+.container-planes .planes .item .descripcion-individual p {
+  font-size: .7em;
+}
+
+.container-planes .planes .item .contratar {
+  padding: 20px;
+  width: 100%;
+  background-color: #e4e4e4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.container-planes .planes .item .contratar input {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 35px;
+  border-radius: 50px;
+  color: #000000;
+  background-color: white;
+  font-weight: normal;
+  font-size: 20px;
+  border-style: none;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  font-size: 1em;
+}
+/*# sourceMappingURL=planes.css.map */
