@@ -47,6 +47,10 @@
             padding: 15px 0px;
             min-width: 120px;
         }
+        & > li:hover{
+            background-color: rgba(0, 0, 0, 0.11);
+            border-bottom: 4px solid  rgba(0, 0, 0, 0.219);
+        }
     }
 }
 
@@ -69,10 +73,19 @@
             cursor: pointer;
             padding: 20px;
         }
+        .isVisible{
+            color: yellow;
+        }
       }
   }
 
   .menu{
+      .menu-ul{
+        display: none;
+      }
+  }
+
+  .isVisible{
     .menu-ul{
         display: block;
         //display: none;

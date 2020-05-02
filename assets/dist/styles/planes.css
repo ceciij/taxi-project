@@ -80,6 +80,11 @@ body {
   min-width: 120px;
 }
 
+.menu .menu-ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.219);
+}
+
 @media screen and (max-width: 768px) {
   .nav-bar .header .burger {
     display: initial;
@@ -87,10 +92,16 @@ body {
     cursor: pointer;
     padding: 20px;
   }
+  .nav-bar .header .isVisible {
+    color: yellow;
+  }
   .menu .menu-ul {
+    display: none;
+  }
+  .isVisible .menu-ul {
     display: block;
   }
-  .menu .menu-ul > li {
+  .isVisible .menu-ul > li {
     list-style: none;
     cursor: pointer;
   }
@@ -141,17 +152,19 @@ footer .container .icons i {
 }
 
 .container-afiliacion .img-planes {
-  max-width: 50%;
-  min-width: 480px;
+  width: 50%;
+  min-width: 470px;
 }
 
 .container-afiliacion .img-planes img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-afiliacion .descripcion-planes {
-  display: inline-block;
   width: 50%;
+  display: inline-block;
   padding: 30px;
 }
 
@@ -191,9 +204,9 @@ footer .container .icons i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -204,7 +217,7 @@ footer .container .icons i {
   max-width: 200px;
   background-color: #cccccc;
   border-radius: 10px;
-  margin: 30px;
+  margin: 20px;
 }
 
 .container-planes .planes .item .titulo-plan {

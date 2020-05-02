@@ -79,6 +79,11 @@ body {
   min-width: 120px;
 }
 
+.menu .menu-ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.219);
+}
+
 @media screen and (max-width: 768px) {
   .nav-bar .header .burger {
     display: initial;
@@ -86,10 +91,16 @@ body {
     cursor: pointer;
     padding: 20px;
   }
+  .nav-bar .header .isVisible {
+    color: yellow;
+  }
   .menu .menu-ul {
+    display: none;
+  }
+  .isVisible .menu-ul {
     display: block;
   }
-  .menu .menu-ul > li {
+  .isVisible .menu-ul > li {
     list-style: none;
     cursor: pointer;
   }

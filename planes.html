@@ -40,8 +40,8 @@
     <div class="descripcion-planes">
         <h2>Afíliate</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint nisi officia consectetur accusamus tempora, dolorem, numquam porro ea architecto tenetur harum perferendis molestiae labore repellendus inventore fugiat ipsa iure.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos minus id expedita unde consectetur. Quae, unde excepturi quos, atque non et iure, illum similique adipisci eaque deserunt assumenda numquam est?
+            Lorem ipsumicing elit. Qui sint nisi officia consectetur accusamus tempora, dolorem, numquam porro ea architecto tenetur harum perferendis molestiae labore repellendus inventore fugiat ipsa iure.
+            Lorem . Quos minus id expedita unde consectetur. Quae, unde excepturi quos, atque non et iure, illum similique adipisci eaque deserunt assumenda numquam est?
         </p>
         <input type="button" value="Ver Planes">
     </div>
@@ -108,11 +108,20 @@
 </footer> 
 
     <script>
-        document.addEventListener('.burger')('click', ()=>{
-            document.querySelector('.burger').classList.add("isVisible");
+        
+        const burguerIcon = document.querySelector('.burger');
+        const menuBar = document.querySelector('.menu');
+    
+        burguerIcon.addEventListener('click', ()=>{
+            if(menuBar.classList.contains("isVisible")){
+                menuBar.classList.remove("isVisible");
+            }
+            else{
+                menuBar.classList.add("isVisible");
+            }
         })
-    </script>
 
+    </script>
 
 </body>
 </html>

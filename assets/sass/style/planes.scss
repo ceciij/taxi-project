@@ -11,16 +11,18 @@
 .container-afiliacion{
     background-color: $light-gray;
     @include flex;
+    
     .img-planes{
-        max-width: 50%;
-        min-width: 480px;
+        width: 50%;
+        min-width: 470px;
         img{
             width: 100%;
+            object-fit: cover;
         }
     }
     .descripcion-planes{
-        display: inline-block;
         width: 50%;
+        display: inline-block;
         padding: 30px;
         h2{
             margin-bottom: 20px;
@@ -43,13 +45,13 @@
         margin-top: 30px;
     }
     .planes{
-        @include flex;
+        @include flex(space-evenly);
         .item{
             min-width: 200px;
             max-width: 200px;
             background-color: $light-gray;
             border-radius: 10px;
-            margin: 30px;
+            margin: 20px;
             .titulo-plan{
                 padding: 0px 20px;
                 h1{
