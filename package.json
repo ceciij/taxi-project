@@ -1,0 +1,23 @@
+{
+  "name": "taxi-project",
+  "version": "1.0.0",
+  "description": "Application to connect taxi drivers and users  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceciij/taxi-project.git"
+  },
+  "keywords": [
+    "App",
+    "JS"
+  ],
+  "author": "Cecilia Morales, Aura Leyva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceciij/taxi-project/issues"
+  },
+  "homepage": "https://github.com/ceciij/taxi-project#readme"
+}
