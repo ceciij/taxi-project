@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservaciones</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/dist/styles/reservaciones.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/dist/styles/reservaciones.css">
 </head>
+
 <body>
-    
-<nav class="nav-bar">
+
+  <nav class="nav-bar">
     <div class="header">
-        <div class="logo">
-            <img src="/assets/images/taxiApp_logo.svg" alt="Logo" width="80px">        
-        </div>
-        <div class="sign-in">
-            <p>Bienvenido <strong>Pedro</strong></p>
-            <i class="fa fa-envelope"></i>
-            <i class="fa fa-user"></i>
-        </div>
-        <i class="fa fa-bars burger"></i>
+      <div class="logo">
+        <img src="/assets/images/taxiApp_logo.svg" alt="Logo" width="80px">
+      </div>
+      <div class="sign-in">
+        <p>Bienvenido <strong>Pedro</strong></p>
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-user"></i>
+      </div>
+      <i class="fa fa-bars burger"></i>
     </div>
     <div class="menu">
-        <ul class="menu-ul">
-            <li class="menu-item">Inicio</li>
-            <li class="menu-item">Tarifas</li>
-            <li class="menu-item">Planes</li>
-            <li class="menu-item">Conductores</li>
-            <li class="menu-item">Mis viajes</li>
-            <li class="menu-item">Lost/Found</li>
-        </ul>
+      <ul class="menu-ul">
+        <li class="menu-item">Inicio</li>
+        <li class="menu-item">Tarifas</li>
+        <li class="menu-item">Planes</li>
+        <li class="menu-item">Conductores</li>
+        <li class="menu-item">Mis viajes</li>
+        <li class="menu-item">Lost/Found</li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<!-- AQUI VA TODO EL CONTENIDO -->
+  <div id="header-top-section">
+    <h2>¿A dónde vas?</h2>
+  </div>
+  <section class="container-map">
+    <div id="map"></div>
+    <div id="map-info-form">
+      <form class="info-form-container">
+        <label class="form-label" for="text-partida">Punto de partida</label><br>
+        <input class="form-input" type="text" id="text-partida" value="   Ingresa dirección"><br>
+        <label class="form-label" for="text-destino">Destino</label><br> 
+        <input class="form-input" type="text" id="text-destino" value="   Ingresa dirección"><br>
+        <p>Distancia:</p><br>
+        <p>Costo:</p><br>
+        <input type="submit" value="Pagar" id="pagar-buttom">
+        <form action="tbd">
+      </form>
+    </div>
+  </section>
+  <div class="divisor"></div>
+  <section class="container-pay">
+    <div></div>
+  </section>
+  <div class="divisor"></div>
+  <section class="container-reserved">
+    <div></div>
+  </section>
 
-<footer>
+  <footer>
     <div class="container">
-        <div>All rights reserved</div>
-        <div>Telefono: 333-333-33</div>
-        <div class="icons">
+      <div>All rights reserved</div>
+      <div>Telefono: 333-333-33</div>
+      <div class="icons">
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
-        </div>
+      </div>
     </div>
-</footer> 
+  </footer>
 
-    <script>
-        document.addEventListener('.burger')('click', ()=>{
-            document.querySelector('.burger').classList.add("isVisible");
-        })
-    </script>
-    <script src="scripts/reservar.js"></script>
+  <script src="scripts/reservar.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkQHgfAJrKU3a-4AViEjSwCMwVYotEMFM&callback=initMap"
+    type="text/javascript"></script>
 
 </body>
+
 </html>

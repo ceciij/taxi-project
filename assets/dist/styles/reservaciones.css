@@ -106,6 +106,78 @@ body {
   }
 }
 
+/* body */
+
+#header-top-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#map {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+#map-info-form {
+  width: 60%;
+  display: inline-block;
+}
+
+.info-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 90px;
+  margin-right: 50px;
+}
+
+.form-input {
+  border-radius: 20px;
+  border: 1px, solid, #5b5b5b;
+  color: #5b5b5b;
+  font-style: italic;
+  font-size: 12pt;
+}
+
+.form-label {
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+#pagar-buttom {
+  width: 63px;
+  height: 27px;
+  border-radius: 15px;
+  background-color: #f9cf29;
+}
+
+.divisor {
+  height: 1px;
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: black;
+}
+
 footer {
   padding: 30px 30px;
   background-color: #000000;
