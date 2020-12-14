@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/dist/styles/reservaciones.css">
+  <link rel="icon" class="favicon-taxiapp" type="image/png" href="assets/images/favicon.png">
 </head>
 
 <body>
@@ -47,8 +48,10 @@
         <input class="form-input" type="text" id="text-partida" value="   Ingresa dirección"><br>
         <label class="form-label" for="text-destino">Destino</label><br> 
         <input class="form-input" type="text" id="text-destino" value="   Ingresa dirección"><br>
-        <p>Distancia:</p><br>
-        <p>Costo:</p><br>
+        <p>Distancia:</p> <input id="distancia"/>
+        <br>
+        <p>Costo:</p>
+        <br>
         <input type="submit" value="Pagar" id="pagar-buttom">
         <form action="tbd">
       </form>
@@ -76,7 +79,8 @@
 
   <script src="scripts/reservar.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkQHgfAJrKU3a-4AViEjSwCMwVYotEMFM&callback=initMap"
-    type="text/javascript"></script>
+    type="text/javascript"></script> 
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkQHgfAJrKU3a-4AViEjSwCMwVYotEMFM&callback=initMap&libraries=geometry"></script>   -->
 
 </body>
 
